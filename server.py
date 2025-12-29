@@ -47,7 +47,7 @@ def do_ffuf(url: str, ffuf_args: List[str]) -> str:
 
 if __name__ == "__main__":
     mcp.run(
-        transport="sse",
+        transport="http",
         host=os.getenv("HOST", "0.0.0.0"),
         port=int(os.getenv("PORT", "8000")),
         path="/mcp",
